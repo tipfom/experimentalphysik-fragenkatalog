@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg font-family="Bitstream Charter, DejaVu Serif, serif" font-size="36" font-stretch="condensed" viewBox="0 0 1400 930" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+ <!-- First title is grabbed -->
+ <title>Proton Proton Cycle</title>
+ 
+ <metadata>
+  <rdf:RDF xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:title>Proton Proton Cycle</dc:title>
+    <dc:source rdf:resource="https://commons.wikimedia.org/wiki/File:Proton_proton_cycle.png"/>
+    <cc:creator rdf:resource="https://hu.wikipedia.org/wiki/User:SzD%C3%B3ri"/>
+    <cc:attributionURL rdf:resource="https://commons.wikimedia.org/wiki/File:Proton_proton_cycle.svg"/>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/2.5"/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+
+ <!-- Define Shapes that will be used throughout -->
+ <defs>
+  <marker id="Triangle" markerHeight="3" markerWidth="4" orient="auto" refY="5" viewBox="0 0 10 10">
+   <path d="m0 0 10 5-10 5z"/>
+  </marker>
+ </defs>
+ 
+ <!-- background -->
+ <rect fill="#c0c0ff" height="930" rx="20" width="1400"/>
+ 
+ <!--row 1-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="50" y="50"/>
+ <text font-size="36" text-anchor="middle" x="250" xml:space="preserve" y="100">p⁺ + p⁺ → ²H + e⁺ + <tspan fill="#f00">ν<tspan dy="10" font-size="30">e</tspan></tspan></text>
+ <rect fill="#00f" height="50" rx="10" width="100" x="40" y="10"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="90" y="40">pp</text>
+ <path d="m450 90h150v100" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ <text font-size="25" x="470" y="80">99,77 %</text>
+ 
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="950" y="50"/>
+ <text font-size="36" text-anchor="middle" x="1150" xml:space="preserve" y="100">p⁺ + e⁻ + p⁺ → ²H + <tspan fill="#f00">ν<tspan dy="10" font-size="30">e</tspan></tspan></text>
+ <rect fill="#00f" height="50" rx="10" width="100" x="1260" y="10"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="1310" y="40">pep</text>
+ <path d="m950 90h-150v100" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ <text font-size="25" text-anchor="end" x="930" y="80">0,23 %</text>
+ 
+ <!--row 2-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="500" y="200"/>
+ <text font-size="36" text-anchor="middle" x="700" y="250">²H + p⁺ → ³He + γ</text>
+ <text font-size="25" text-anchor="end" x="480" y="230">84,92 %</text>
+ <path d="m500 240h-150v400" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ <text font-size="25" x="720" y="320">15,08 %</text>
+ <path d="m700 280v60" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ <text font-size="25" x="905" y="190">10⁻⁵ %</text>
+ <path d="m900 240h40" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ 
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="950" y="200"/>
+ <text font-size="36" text-anchor="middle" x="1150" xml:space="preserve" y="250" letter-spacing="-1">³He + p⁺ → ⁴He + e⁺ + <tspan fill="#f00">ν<tspan dy="10" font-size="30">e</tspan></tspan></text>
+ <rect fill="#00f" height="50" rx="10" width="100" x="1260" y="270"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="1310" y="300">hep</text>
+ 
+ <!--row 3-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="500" y="350"/>
+ <text font-size="36" text-anchor="middle" x="700" y="400">³He + ⁴He → ⁷Be + γ</text>
+ <text font-size="25" x="720" y="470">99,9 %</text>
+ <path d="m700 430v60" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ <text font-size="25" x="920" y="380">0,1 %</text>
+ <path d="m900 390h150v100" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ 
+ <!--row 4-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="500" y="500"/>
+ <text font-size="36" text-anchor="middle" x="700" xml:space="preserve" y="550">⁷Be + e⁻ → ⁷Li + <tspan fill="#f00">ν<tspan dy="10" font-size="30">e</tspan></tspan></text>
+ <rect fill="#00f" height="50" rx="10" width="100" x="490" y="460"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="540" y="490">⁷Be</text>
+ <path d="m700 580v60" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ 
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="950" y="500"/>
+ <text font-size="36" text-anchor="middle" x="1150" y="550">⁷Be + p⁺ → ⁸B + γ</text>
+ <path d="m1050 580v60" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ 
+ <!--row 5-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="50" y="650"/>
+ <text font-size="36" text-anchor="middle" x="250" y="700">³He + ³He → ⁴He + 2p⁺</text>
+ <rect fill="#4040a0" height="50" rx="10" width="100" x="360" y="720"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="410" y="750">ppI</text>
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="500" y="650"/>
+ <text font-size="36" text-anchor="middle" x="700" y="700">⁷Li + p⁺ → ⁴He + ⁴He</text>
+ <rect fill="#4040a0" height="50" rx="10" width="100" x="810" y="720"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="860" y="750">ppII</text>
+ 
+ <!--row 6-->
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="950" y="650"/>
+ <text font-size="36" text-anchor="middle" x="1150" xml:space="preserve" y="700">⁸B → ⁸Be* + e⁺ + <tspan fill="#f00">ν<tspan dy="10" font-size="30">e</tspan></tspan></text>
+ <rect fill="#00f" height="50" rx="10" width="100" x="1260" y="610"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="1310" y="640">⁸B</text>
+ <path d="m1050 730v60" fill="none" marker-end="url(#Triangle)" stroke="#000" stroke-width="3"/>
+ 
+ <rect fill="#fff" height="80" rx="10" stroke="#000" width="400" x="950" y="800"/>
+ <text font-size="36" text-anchor="middle" x="1150" y="850">⁸Be* → ⁴He + ⁴He</text>
+ <rect fill="#4040a0" height="50" rx="10" width="100" x="1260" y="870"/>
+ <text fill="#fff" font-size="30" text-anchor="middle" x="1310" y="900">ppIII</text>
+
+</svg>

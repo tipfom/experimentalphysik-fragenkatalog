@@ -1,0 +1,191 @@
+%\documentclass[twoside]{article}
+\documentclass[]{scrartcl}
+\usepackage[utf8]{inputenc}
+
+\title{Schlüsselkonzepte der Experimentalphysik\\Fragenkatalog zur mündlichen Prüfung\\\vspace{.4em}\small{
+\total{questionsansweredtotal} von \total{questionstotal} Fragen beantwortet}}
+\author{Joachim Schwardt, Tim Pokart und Julian Fleck }
+\date{\today}
+
+\usepackage[ngerman]{babel}
+\usepackage[titles]{tocloft}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{physics}
+\usepackage{tensor}
+\usepackage{color}
+\usepackage{float}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{graphicx}
+%\usepackage[left=3cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\usepackage[bottom=3cm]{geometry}
+\usepackage[font=small,labelfont=bf,margin=0.5cm]{caption}
+\usepackage{subcaption}
+\usepackage[table, dvipsnames]{xcolor}
+\usepackage{svg}
+\usepackage{siunitx}
+\usepackage{animate}
+\usepackage{pgfplots}
+% \usepackage{pgfmath-xfp}
+\pgfplotsset{compat=1.17}   % added to remove backwards compatibilty mode warning
+\usepackage[compat=1.1.0]{tikz-feynman}   % added [compat] to remove package warning
+\usetikzlibrary{calc,arrows.meta,arrows,graphs}
+
+\usepackage{totcount}
+\newtotcounter{questionstotal}
+\newtotcounter{questionsansweredtotal}
+
+\usepackage{array}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+
+
+% \renewcommand*\familydefault{\sfdefault}
+
+\sisetup{range-phrase=\ldots}
+
+\newcommand{\e}{\text{e}}
+\renewcommand{\i}{\text{i}}
+
+% \newcommand{\listSequencename}{List of Sequences}
+\newcommand{\listofquestionsname}{Fragenkatalog}
+\newlistof[section]{questions}{qst}{\listofquestionsname}
+\cftsetindents{questions}{1.5em}{2.5em}
+
+\newcommand{\refimgsource}[4]{Unverändert entnommen aus #1 von \url{#2} am #3 (Lizenz: #4).}
+\newcommand{\refimgsourcebook}[4]{Unverändert entnommen aus \textit{#2}, #1 (ISBN: #3), S. #4.} % author book isbn page
+
+\newcounter{question}
+\numberwithin{question}{section}
+\newenvironment{question}[1] % noch nicht vollständig überprüfte Frage
+{
+    \stepcounter{questionstotal}
+    \refstepcounter{question}
+    \addcontentsline{qst}{questions}{\protect\numberline{\thequestion}\textcolor{red}{\textbf{?}} #1}%
+
+
+    \begin{center}
+        \def\arraystretch{1.5}
+        %JS: changed from 0.8\textwidth to 0.95\linewidth
+        %image width should now be 418.25555pt
+        \begin{tabular}{|p{0.95\linewidth}|}
+            \hline
+            \cellcolor{gray!25} \textbf{Frage \thequestion:  {\boldmath #1}}  \\
+            \hline
+            \def\arraystretch{1.2}
+}
+{
+            \def\arraystretch{1.5}
+            \\
+            \hline
+        \end{tabular}
+        \def\arraystretch{1.0}
+    \end{center}
+}
+
+\newenvironment{fquestion}[1] % fertige Frage
+{
+    \stepcounter{questionstotal}
+    \stepcounter{questionsansweredtotal}
+    \refstepcounter{question}
+    \addcontentsline{qst}{questions}{\protect\numberline{\thequestion}#1}%
+
+
+    \begin{center}
+        \def\arraystretch{1.5}
+        \arrayrulecolor{green!25!black!75} 
+        %JS: changed from 0.8\textwidth to 0.95\linewidth
+        \begin{tabular}{|p{0.95\linewidth}|}
+            \hline
+            \cellcolor{green!25} \textbf{Frage \thequestion:  {\boldmath #1}}  \\
+            \hline
+            \arrayrulecolor{black} 
+            \def\arraystretch{1.2}
+}
+{
+            \def\arraystretch{1.5}
+            \arrayrulecolor{green!25!black!75} 
+            \\
+            \hline
+        \end{tabular}
+        \def\arraystretch{1.0}
+        \arrayrulecolor{black} 
+    \end{center}
+}
+
+
+
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\clearpage
+\phantomsection
+\addcontentsline{toc}{section}{Fragenkatalog}
+\listofquestions
+
+\cleardoublepage
+\section*{Literatur}
+\label{sec:literatur}
+\addcontentsline{toc}{section}{\nameref{sec:literatur}}
+
+\begin{itemize}
+    \item Povh: \textit{``Teilchen und Kerne''} (Atomkerne, Streuung)
+    \item Demtröder: \textit{``Experimentelle Physik 3''} (Atome, Moleküle, LASER, Bandstruktur)
+    \item Wiesendanger: \textit{``Einführung in die Struktur der Materie''} (Atomkerne)
+    \item Feynman: \textit{``The Feynman Lectures on Physics 3''} (Ammoniak-Molekül)
+    \item Klauß, Kobel: \textit{Vorlesungsskript von  2013} (Grundlagen, Auswahlregeln)
+\end{itemize}
+
+\cleardoublepage
+\section{Symmetriebrechung}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Symmetriebrechung}
+\input{katalog_symmetriebrechung}
+
+\cleardoublepage
+\section{Zustandsmischungen}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Zustandsmischungen}
+\input{katalog_zustandsmischungen}
+
+% \cleardoublepage
+% \section{Phononen}
+% \addcontentsline{qst}{section}{\thesection \hspace{.5em} Phononen}
+% \input{katalog_phononen}
+
+\cleardoublepage
+\section{Streuung}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Streuung}
+\input{katalog_streuung}
+
+\cleardoublepage
+\section{Kollektive Anregungen}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Kollektive Anregungen}
+\input{katalog_kollektive_anregungen}
+
+\cleardoublepage
+\section{Mehrelektronensysteme und Quasiteilchen}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Mehrelektronensysteme und Quasiteilchen}
+\input{katalog_mehrelektronensysteme_bzw_festkoerper}
+
+\cleardoublepage
+\section{Energieniveaus und Übergänge}
+\addcontentsline{qst}{section}{\thesection \hspace{.5em} Energieniveaus und Übergänge}
+\input{katalog_energieskalen}
+
+\begin{thebibliography}{9}
+    \bibitem{Bur2000} Burkel, Eberhard. (2000). Phonon spectroscopy by inelastic x-ray scattering. Reports on Progress in Physics - REP PROGR PHYS. 63. 171-232. 10.1088/0034-4885/63/2/203. 
+    % \bibitem{GhaGhaGha2012} Ghahramany, N., Gharaati, S. and Ghanaatian, M. New approach to nuclear binding energy in integrated nuclear model. J Theor Appl Phys 6, 3 (2012). \url{https://doi.org/10.1186/2251-7235-6-3}
+    \bibitem{WanAudKonHuaNaiXu2016} Meng Wang, G. Audi, F. G. Kondev, W. J. Huang, S. Naimi and Xing Xu. The AME2016 atomic mass evaluation (II). Tables, graphs and references[J]. Chinese Physics C, 2017, 41(3): 030003.
+    
+\end{thebibliography}
+
+\end{document}
